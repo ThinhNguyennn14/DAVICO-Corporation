@@ -206,33 +206,16 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* ── 3. BẢN ĐỒ ĐỒ HỌA KIẾN TRÚC ── */}
-      <section className="relative h-[360px] bg-[#E8EDF2] overflow-hidden flex items-center justify-center">
-        <div
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage: `
-              linear-gradient(to right, #B0C0D0 1px, transparent 1px),
-              linear-gradient(to bottom, #B0C0D0 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px',
-          }}
+      {/* ── 3. BẢN ĐỒ VỊ TRÍ DAVICO ── */}
+      <section className="h-[300px] bg-[#E8EDF2]">
+        <iframe
+          title="Bản đồ vị trí DAVICO Tower"
+          src="https://maps.google.com/maps?q=Số%201%2C%20đường%20Dương%20Tự%20Minh%2C%20Quan%20Triều%2C%20Thái%20Nguyên%2C%20Việt%20Nam&amp;z=18&amp;output=embed"
+          className="w-full h-full border-0"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          allowFullScreen
         />
-
-        <div className="absolute w-[200%] h-8 bg-white/70 -rotate-12 translate-y-12" />
-
-        <div className="relative z-10 flex items-center gap-4">
-          <div className="w-5 h-5 rounded-full bg-[#E07026] border-4 border-white shadow-xl animate-pulse" />
-
-          <div className="bg-[#101D2D] text-white p-6 shadow-2xl max-w-sm border-l-4 border-[#E07026]">
-            <h4 className="text-lg font-bold text-white mb-1">
-              DAVICO Tower
-            </h4>
-            <p className="text-gray-300 text-xs font-light">
-              Số 1, đường Dương Tự Minh, P. Quan Triều, Thái Nguyên
-            </p>
-          </div>
-        </div>
       </section>
     </div>
   )
