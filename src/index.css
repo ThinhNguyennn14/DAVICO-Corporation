@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1A202C;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+  
+  /* Tiêu đề Manrope: Khoảng cách dòng thoáng (leading-[1.25]), không ép dính chữ, dấu tiếng Việt hiển thị cân đối */
+  h1, h2, h3, .font-serif, .font-serif-heading {
+    font-family: 'Manrope', sans-serif !important;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+}
+
+@layer components {
+  /* Match the bold, upright ampersand used in the visual reference. */
+  .ampersand {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    margin: 0 0.18em;
+    opacity: 0.9;
+  }
+
+  /* Nút cam Figma: thoáng đãng, chữ đậm, hover đổi tông nhẹ */
+  .btn-figma-orange {
+    @apply inline-flex items-center justify-center gap-2 bg-[#E07026] text-white text-xs font-bold uppercase tracking-wider px-7 py-3.5 transition-all duration-200 hover:bg-[#C85D1A] rounded-none shadow-sm;
+  }
+  /* Nút outline Figma */
+  .btn-figma-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-[#101D2D] text-[#101D2D] text-xs font-bold uppercase tracking-wider px-6 py-3 transition-all duration-200 hover:bg-[#101D2D] hover:text-white rounded-none;
+  }
+  .btn-figma-outline-white {
+    @apply inline-flex items-center justify-center gap-2 border border-white/60 text-white text-xs font-bold uppercase tracking-wider px-6 py-3 transition-all duration-200 hover:bg-white hover:text-[#0F1D2F] rounded-none;
+  }
+
+  /* Eyebrow Label cam */
+  .eyebrow-orange {
+    @apply text-[#E07026] text-[11px] font-bold uppercase tracking-[0.2em] mb-4 block;
+  }
+  .eyebrow-white {
+    @apply text-white/80 text-[11px] font-bold uppercase tracking-[0.2em] mb-4 block;
+  }
+  .eyebrow-green {
+    @apply text-[#0D5A3A] text-[11px] font-bold uppercase tracking-[0.2em] mb-4 block;
+  }
+
+  /* Tag badge góc ảnh */
+  .figma-tag {
+    @apply inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-none;
+  }
+}
+
+/* Arc curves trang trí góc phải */
+.arc-circle-1 {
+  width: 580px;
+  height: 580px;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 112, 38, 0.4);
+}
+.arc-circle-2 {
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 112, 38, 0.25);
+}
+.arc-circle-3 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 112, 38, 0.15);
+}
