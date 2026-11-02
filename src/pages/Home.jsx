@@ -104,15 +104,14 @@ export default function Home() {
         <div className="relative z-10 max-w-[1380px] w-full mx-auto px-6 lg:px-12 pt-40">
           <div className="max-w-3xl">
             {/* Eyebrow Label cam */}
-            <p className="text-[#E07026] text-xs font-bold uppercase tracking-[0.2em] mb-6 flex items-center flex-wrap">
-              CÔNG TY CP TƯ VẤN <span className="ampersand text-sm">&</span> ĐẦU TƯ PHÁT TRIỂN BỀN VỮNG ĐẤT VIỆT
+            <p className="text-base sm:text-lg font-bold uppercase tracking-[0.2em] mb-6 flex items-center flex-wrap text-[#E07026]">
+              CÔNG TY CP TƯ VẤN <span className="ampersand text-lg sm:text-xl">&</span> ĐẦU TƯ PHÁT TRIỂN BỀN VỮNG ĐẤT VIỆT
             </p>
 
             {/* Tiêu đề chính Hero */}
             <h1 className="flex flex-col gap-3 sm:gap-4 text-5xl sm:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-7 tracking-normal">
-              <span>DAVICO</span>
-              <span>TẤT CẢ VÌ <span className="whitespace-nowrap">MỤC TIÊU</span></span>
-              <span>PHÍA TRƯỚC</span>
+              <span className="text-[#339900]">DAVICO</span>
+              <span className="whitespace-nowrap text-[clamp(0.875rem,4vw,1.875rem)]">XÂY NỀN MÓNG - DỰNG TƯƠNG LAI</span>
             </h1>
 
             {/* Phụ đề mô tả */}

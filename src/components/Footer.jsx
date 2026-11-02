@@ -28,13 +28,13 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-3">
               <img src="/images/logo.png" alt="DAVICO" className="h-12 w-auto object-contain" />
               <div>
-                <div className="font-extrabold text-xl tracking-wider text-white">DAVICO</div>
-                <div className="text-[10px] text-gray-400 tracking-[0.25em]">ĐẤT VIỆT · BỀN VỮNG</div>
+                <div className="font-extrabold text-xl tracking-wider text-[#339900]">DAVICO</div>
+                <div className="text-[10px] text-gray-400 tracking-[0.25em]">XÂY NỀN MÓNG - DỰNG TƯƠNG LAI</div>
               </div>
             </Link>
             
             <p className="text-[#E07026] text-xs font-bold tracking-wider uppercase">
-              “DAVICO – TẤT CẢ VÌ MỤC TIÊU PHÍA TRƯỚC”
+              “DAVICO – XÂY NỀN MÓNG - DỰNG TƯƠNG LAI”
             </p>
             
             <p className="text-gray-400 text-xs leading-relaxed max-w-sm">

@@ -37,9 +37,9 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3 group">
           <img src="/images/logo.png" alt="DAVICO" className="h-11 w-auto object-contain" />
           <div className="text-white leading-none">
-            <div className="font-extrabold text-lg tracking-wider">DAVICO</div>
+            <div className="font-extrabold text-lg tracking-wider text-[#339900]">DAVICO</div>
             <div className="text-[9px] text-gray-300 tracking-[0.25em] font-medium mt-1">
-              ĐẤT VIỆT · BỀN VỮNG
+              XÂY NỀN MÓNG - DỰNG TƯƠNG LAI
             </div>
           </div>
         </Link>
