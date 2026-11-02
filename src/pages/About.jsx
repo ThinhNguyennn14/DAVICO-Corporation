@@ -89,18 +89,20 @@ export default function About() {
 
             <div className="lg:col-span-5">
               <div
-                className="relative h-72 sm:h-80 bg-[#162B3D] overflow-hidden cursor-pointer group"
+                className="relative h-72 sm:h-80 bg-white overflow-hidden cursor-pointer group"
                 onClick={() => setModalImg({
                   img: '/images/projects/doi_ngu_davico.jpg',
                   title: 'Đội ngũ cán bộ, kỹ sư DAVICO tại hiện trường'
                 })}
               >
+                <div className="absolute inset-1 overflow-hidden transition-all duration-500 group-hover:inset-0">
                 <img
-                  src="/images/projects/doi_ngu_davico.jpg"
+                  src="/images/projects/doi_ngu.png"
                   alt="Đội ngũ DAVICO"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-[#0F2A24]/30" />
+                </div>
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@ const services = [
     num: '04',
     title: 'Trồng trọt kinh doanh nông sản',
     desc: 'Bưởi Diễn Tràng Xá và Trà Tân Cương – DAVICO, trồng và chăm sóc theo quy trình VietGAP.',
-    img: '/images/projects/hinh11_buoi_trang_xa.jpg',
+    img: 'images/projects/img_p16_2.jpeg',
     to: '/nong-san',
   },
   {
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="lg:col-span-6 relative mt-4 lg:mt-0">
               <div className="relative h-[430px] bg-[#143B33] overflow-hidden">
                 <img
-                  src="/images/projects/doi_ngu_davico.jpg"
+                  src="/images/projects/doi_ngu.png"
                   alt="Đội ngũ DAVICO"
                   className="w-full h-full object-cover object-center"
                 />
