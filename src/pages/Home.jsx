@@ -41,21 +41,21 @@ const services = [
     num: '02',
     title: 'Thi công xây dựng nền móng',
     desc: 'Cọc khoan nhồi mini, cọc ống bê tông, cọc ép bê tông cốt thép cho công trình có điều kiện địa chất, địa hình phức tạp.',
-    img: 'public/images/projects/hinh7_thi_cong_nha_anh_quyet(1).png',
+    img: '/images/projects/hinh7_thi_cong_nha_anh_quyet(1).png',
     to: '/linh-vuc',
   },
   {
     num: '03',
     title: 'Dịch vụ kỹ thuật khảo sát, điện nước',
     desc: 'Mua bán, sửa chữa thiết bị khảo sát; điện năng lượng mặt trời, máy lọc không khí, lọc nước.',
-    img: 'public/images/projects/img_p14_4.jpeg',
+    img: '/images/projects/img_p14_4.jpeg',
     to: '/linh-vuc',
   },
   {
     num: '04',
     title: 'Trồng trọt kinh doanh nông sản',
     desc: 'Bưởi Diễn Tràng Xá và Trà Tân Cương – DAVICO, trồng và chăm sóc theo quy trình VietGAP.',
-    img: 'images/projects/img_p16_2.jpeg',
+    img: '/images/projects/img_p16_2.jpeg',
     to: '/nong-san',
   },
   {
@@ -93,7 +93,7 @@ export default function Home() {
         {/* Background ảnh minh họa */}
         <div className="absolute inset-0 z-0">
           <img
-            src="public/images/bgr.png"
+            src="/images/bgr.png"
             alt="DAVICO Hero Background"
             className="w-full h-full object-cover object-top"
           />
@@ -347,7 +347,7 @@ export default function Home() {
             <div className="lg:col-span-5 flex flex-col gap-8 lg:gap-10">
               <div className="relative bg-[#132230] h-[250px] overflow-hidden flex flex-col justify-end p-6 sm:p-8 text-white group">
                 <img
-                  src="public/images/projects/img_p12_2.jpeg"
+                  src="/images/projects/img_p12_2.jpeg"
                   alt="Khảo sát địa chất Thanh Bình"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -369,7 +369,7 @@ export default function Home() {
 
               <div className="relative bg-[#132230] h-[250px] overflow-hidden flex flex-col justify-end p-6 sm:p-8 text-white group">
                 <img
-                  src="public/images/projects/hinh6_thi_cong_nha_anh_hai(1).png"
+                  src="/images/projects/hinh6_thi_cong_nha_anh_hai(1).png"
                   alt="Thi công nền móng nhà anh Hải"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -420,14 +420,14 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-5 sm:gap-6">
                 <div className="h-72 sm:h-80 bg-[#124B36] overflow-hidden">
                   <img
-                    src="public/images/projects/page_render_16(1).png"
+                    src="/images/projects/page_render_16(1).png"
                     alt="Bưởi Diễn Tràng Xá"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-72 sm:h-80 bg-[#124B36] overflow-hidden relative">
                   <img
-                    src="public/images/projects/page_render_17(1).png"
+                    src="/images/projects/page_render_17(1).png"
                     alt="Trà Tân Cương"
                     className="w-full h-full object-cover"
                   />
