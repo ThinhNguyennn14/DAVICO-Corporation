@@ -42,7 +42,7 @@ const facilities = [
     area: '300 m²',
     name: 'Trụ sở công ty',
     address: 'Nhà số 1, Ngõ 86, đường Dương Tự Minh, phường Quan Triều, tỉnh Thái Nguyên.',
-    img: '/images/projects/hinh10_nong_trai_davico.jpg',
+    img: 'public/images/projects/img_p15_3.jpeg',
   },
   {
     area: '400 m²',
@@ -54,7 +54,7 @@ const facilities = [
     area: '~100 m²',
     name: 'Kho chứa máy móc, thiết bị',
     address: 'Nhà số 2, Ngõ 80, đường Dương Tự Minh, phường Quan Triều, tỉnh Thái Nguyên.',
-    img: '/images/projects/hinh9_van_chuyen_thiet_bi.jpg',
+    img: 'public/images/projects/img_p15_2.jpeg',
   },
 ]
 

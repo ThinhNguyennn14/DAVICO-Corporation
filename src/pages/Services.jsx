@@ -106,7 +106,7 @@ export default function Services() {
 
           <div className="relative min-h-[400px] bg-[#162B3D] overflow-hidden">
             <img
-              src="/images/projects/hinh1_khao_sat_dia_hinh_dong_tien.jpg"
+              src="public/images/projects/img_p11_2.jpeg"
               alt="Khảo sát địa hình Đồng Tiến"
               className="w-full h-full object-cover"
             />
@@ -117,7 +117,7 @@ export default function Services() {
         <section id="service-2" className="grid lg:grid-cols-2 border-b border-gray-200">
           <div className="relative min-h-[400px] bg-[#162B3D] overflow-hidden order-2 lg:order-1">
             <img
-              src="/images/projects/hinh6_thi_cong_nha_anh_hai.jpg"
+              src="public/images/projects/hinh6_thi_cong_nha_anh_hai(1).png"
               alt="Thi công nền móng"
               className="w-full h-full object-cover"
             />
@@ -179,7 +179,7 @@ export default function Services() {
 
           <div className="relative min-h-[400px] bg-[#0D5A3A] overflow-hidden">
             <img
-              src="/images/projects/hinh8_sua_chua_hop_so_ukb12_25.jpg"
+              src="public/images/projects/img_p14_4.jpeg"
               alt="Sửa chữa thiết bị khảo sát"
               className="w-full h-full object-cover"
             />
@@ -190,7 +190,7 @@ export default function Services() {
         <section id="service-4" className="grid lg:grid-cols-2 border-b border-gray-200">
           <div className="relative min-h-[400px] bg-[#0E5B3C] overflow-hidden order-2 lg:order-1">
             <img
-              src="/images/projects/hinh12_tra_tan_cuong.jpg"
+              src="/images/projects/anh_doi_che.jpg"
               alt="Nông trại Davico"
               className="w-full h-full object-cover"
             />

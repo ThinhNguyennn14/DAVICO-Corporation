@@ -76,7 +76,7 @@ export default function Agriculture() {
                 })}
               >
                 <img
-                  src="/images/projects/hinh10_nong_trai_davico.jpg"
+                  src="/images/projects/img_p15_3.jpeg"
                   alt="Nông trại Davico"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -88,8 +88,22 @@ export default function Agriculture() {
       </section>
 
       {/* ── 3. SẢN PHẨM 01: BƯỞI DIỄN TRÀNG XÁ ── */}
-      <section className="grid lg:grid-cols-2 border-t border-b border-gray-200">
-        <div className="p-8 sm:p-14 lg:p-20 flex flex-col justify-center bg-white">
+      <section className="grid lg:grid-cols-[minmax(0,1fr)_1.15fr_minmax(0,1fr)] items-center gap-8 lg:gap-10 border-t border-b border-gray-200 p-6 sm:p-10 lg:p-12">
+        <div
+          className="relative h-64 sm:h-80 lg:h-[520px] bg-[#0D5A3A] overflow-hidden cursor-pointer group"
+          onClick={() => setModalImg({
+            img: '/images/projects/hinh11_buoi_trang_xa.jpg',
+            title: 'Vườn bưởi Tràng Xá – Davico'
+          })}
+        >
+          <img
+            src="/images/projects/hinh11_buoi_trang_xa.jpg"
+            alt="Bưởi Diễn trên cây tại vườn Tràng Xá"
+            className="absolute left-0 top-0 w-full h-[200%] object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
+          />
+        </div>
+
+        <div className="py-4 sm:py-8 lg:py-12 flex flex-col justify-center bg-white text-center">
           <span className="eyebrow-orange">SẢN PHẨM 01</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#101D2D] mb-6 leading-[1.25]">
             Bưởi Diễn Tràng Xá –<br />DAVICO
@@ -103,37 +117,37 @@ export default function Agriculture() {
         </div>
 
         <div
-          className="relative min-h-[440px] bg-[#0D5A3A] overflow-hidden cursor-pointer group"
+          className="relative h-64 sm:h-80 lg:h-[520px] bg-[#0D5A3A] overflow-hidden cursor-pointer group"
           onClick={() => setModalImg({
             img: '/images/projects/hinh11_buoi_trang_xa.jpg',
-            title: 'Hình 11 · Bưởi Tràng Xá – Davico'
+            title: 'Bưởi Tràng Xá sau thu hoạch – Davico'
           })}
         >
           <img
-            src="/images/projects/hinh11_buoi_trang_xa.jpg"
-            alt="Bưởi Diễn Tràng Xá"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            src="/images/projects/img_p16_3.jpeg"
+            alt="Bưởi Tràng Xá sau thu hoạch"
+            className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-500"
           />
         </div>
       </section>
 
       {/* ── 4. SẢN PHẨM 02: TRÀ TÂN CƯƠNG ── */}
-      <section className="grid lg:grid-cols-2 border-b border-gray-200">
+      <section className="grid lg:grid-cols-[minmax(0,1fr)_1.15fr_minmax(0,1fr)] items-center gap-8 lg:gap-10 border-b border-gray-200 p-6 sm:p-10 lg:p-12">
         <div
-          className="relative min-h-[440px] bg-[#0D5A3A] overflow-hidden order-2 lg:order-1 cursor-pointer group"
+          className="relative h-64 sm:h-80 lg:h-[520px] bg-[#0D5A3A] overflow-hidden cursor-pointer group"
           onClick={() => setModalImg({
             img: '/images/projects/hinh12_tra_tan_cuong.jpg',
-            title: 'Hình 12 · Trà Tân Cương – Davico'
+            title: 'Vườn chè Tân Cương – Davico'
           })}
         >
           <img
             src="/images/projects/hinh12_tra_tan_cuong.jpg"
-            alt="Trà Tân Cương"
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            alt="Luống chè non tại vườn Tân Cương"
+            className="absolute left-0 top-0 w-full h-[200%] object-cover object-top group-hover:scale-[1.03] transition-transform duration-500"
           />
         </div>
 
-        <div className="p-8 sm:p-14 lg:p-20 flex flex-col justify-center bg-[#0D5A3A] text-white order-1 lg:order-2">
+        <div className="py-8 sm:py-12 lg:py-16 px-4 sm:px-8 flex flex-col justify-center bg-[#0D5A3A] text-white text-center">
           <span className="eyebrow-orange">SẢN PHẨM 02</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-6 leading-[1.25]">
             Trà Tân Cương –<br />DAVICO
@@ -144,6 +158,20 @@ export default function Agriculture() {
           <p className="text-[#E07026] text-xs font-semibold">
             Địa chỉ: Xóm Cây Si, xã Đại Phúc, tỉnh Thái Nguyên
           </p>
+        </div>
+
+        <div
+          className="relative h-64 sm:h-80 lg:h-[520px] bg-[#0D5A3A] overflow-hidden cursor-pointer group"
+          onClick={() => setModalImg({
+            img: '/images/projects/hinh12_tra_tan_cuong.jpg',
+            title: 'Đồi chè Tân Cương – Davico'
+          })}
+        >
+          <img
+            src="/images/projects/img_p17_3.jpeg"
+            alt="Đồi chè Tân Cương"
+            className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-500"
+          />
         </div>
       </section>
 
@@ -167,19 +195,19 @@ export default function Agriculture() {
               </Link>
             </div>
 
-            <div className="lg:col-span-7 grid grid-cols-2 gap-6">
+            <div className="lg:col-span-7 grid grid-cols-2 gap-3">
               <div className="h-80 bg-[#162B3D] overflow-hidden relative">
                 <img
-                  src="/images/projects/hinh11_buoi_trang_xa.jpg"
+                  src="/images/projects/page_render_16(1).png"
                   alt="Vườn Bưởi"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
               <div className="h-80 bg-[#162B3D] overflow-hidden relative">
                 <img
-                  src="/images/projects/hinh12_tra_tan_cuong.jpg"
+                  src="/images/projects/page_render_17(1).png"
                   alt="Vườn Chè"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
