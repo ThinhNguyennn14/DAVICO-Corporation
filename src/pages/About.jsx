@@ -164,7 +164,7 @@ export default function About() {
             Dẫn đầu trong các lĩnh vực kinh doanh
           </h2>
           <p className="text-gray-200 text-sm leading-relaxed font-light">
-            Với tinh thần khởi nghiệp “Tất cả vì mục tiêu phía trước”, DAVICO quyết tâm trở thành doanh nghiệp dẫn đầu trong các lĩnh vực kinh doanh và hướng tới tập đoàn đa ngành trong tương lai.
+            Với tinh thần khởi nghiệp “Xây nền móng - Dựng tương lai”, DAVICO quyết tâm trở thành doanh nghiệp dẫn đầu trong các lĩnh vực kinh doanh và hướng tới tập đoàn đa ngành trong tương lai.
           </p>
         </div>
 
