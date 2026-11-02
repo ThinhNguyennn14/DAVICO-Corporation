@@ -16,8 +16,11 @@ const companyInfo = [
   },
   {
     label: 'ĐIỆN THOẠI',
-    value: '0972.762.296 · 0986.255.738',
-    href: 'tel:0972762296',
+    phones: [
+      { value: '0972.762.296', href: 'tel:0972762296' },
+      { value: '0986.255.738', href: 'tel:0986255738' },
+    ],
+    zaloHref: 'https://zalo.me/84986255738',
   },
   {
     label: 'FANPAGE',
@@ -91,7 +94,38 @@ export default function Contact() {
                     <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#0D5A3A] mb-2">
                       {info.label}
                     </div>
-                    {info.href ? (
+                    {info.phones ? (
+                      <div className="flex flex-wrap items-center gap-x-2 gap-y-2 text-xs sm:text-sm text-[#101D2D] font-medium">
+                        {info.phones.map((phone, phoneIdx) => (
+                          <span key={phone.value} className="inline-flex items-center gap-2">
+                            {phoneIdx > 0 && <span aria-hidden="true">·</span>}
+                            <a
+                              href={phone.href}
+                              className="hover:text-[#E07026] transition-colors"
+                            >
+                              {phone.value}
+                            </a>
+                            {phone.value === '0986.255.738' && (
+                              <a
+                                href={info.zaloHref}
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="Nhắn tin qua Zalo đến 0986.255.738"
+                                title="Nhắn tin qua Zalo"
+                                className="inline-flex h-7 w-7 shrink-0 items-center justify-center hover:opacity-80 transition-opacity"
+                              >
+                                <img
+                                  src="/images/Logo-Zalo-Arc.webp"
+                                  alt=""
+                                  aria-hidden="true"
+                                  className="h-full w-full object-contain"
+                                />
+                              </a>
+                            )}
+                          </span>
+                        ))}
+                      </div>
+                    ) : info.href ? (
                       <a
                         href={info.href}
                         className="text-xs sm:text-sm text-[#101D2D] font-medium hover:text-[#E07026] transition-colors"

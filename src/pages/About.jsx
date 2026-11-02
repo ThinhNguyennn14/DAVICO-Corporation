@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import AmpersandText from '../components/AmpersandText.jsx'
 
 const timeline = [
   {
@@ -25,9 +24,9 @@ const timeline = [
 ]
 
 const hdqt = [
-  { name: 'Lê Thanh Đạo', role: 'CHỦ TỊCH HĐQT', sub: 'Hội đồng quản trị', tag: 'LĐ' },
-  { name: 'Vũ Ngọc Chiến', role: 'THÀNH VIÊN HĐQT', sub: 'Hội đồng quản trị', tag: 'VC' },
-  { name: 'Đặng Văn Hướng', role: 'THÀNH VIÊN HĐQT', sub: 'Hội đồng quản trị', tag: 'ĐH' },
+  { name: 'Lê Thanh Đạo', role: 'CHỦ TỊCH HĐQT', tag: 'LĐ' },
+  { name: 'Vũ Ngọc Chiến', role: 'THÀNH VIÊN HĐQT', tag: 'VC' },
+  { name: 'Đặng Văn Hướng', role: 'THÀNH VIÊN HĐQT', tag: 'ĐH' },
 ]
 
 const bgd = [
@@ -42,19 +41,19 @@ const facilities = [
     area: '300 m²',
     name: 'Trụ sở công ty',
     address: 'Nhà số 1, Ngõ 86, đường Dương Tự Minh, phường Quan Triều, tỉnh Thái Nguyên.',
-    img: '/images/projects/img_p15_3.jpeg',
+    img: '/images/photoDAVICO/tru_so_11zon.webp',
   },
   {
     area: '400 m²',
     name: 'Văn phòng – Toà nhà Davico Tower',
     address: 'Số 1, đường Dương Tự Minh, phường Quan Triều, tỉnh Thái Nguyên.',
-    img: '/images/projects/cover_page.jpg',
+    img: '/images/photoDAVICO/van_phong.webp',
   },
   {
     area: '~100 m²',
     name: 'Kho chứa máy móc, thiết bị',
     address: 'Nhà số 2, Ngõ 80, đường Dương Tự Minh, phường Quan Triều, tỉnh Thái Nguyên.',
-    img: '/images/projects/img_p15_2.jpeg',
+    img: '/images/photoDAVICO/img_p15_2_11zon.webp',
   },
 ]
 
@@ -97,7 +96,7 @@ export default function About() {
               >
                 <div className="absolute inset-1 overflow-hidden transition-all duration-500 group-hover:inset-0">
                 <img
-                  src="/images/projects/doi_ngu.png"
+                  src="/images/photoDAVICO/doi_ngu.webp"
                   alt="Đội ngũ DAVICO"
                   className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
                 />
@@ -213,66 +212,65 @@ export default function About() {
       </section>
 
       {/* ── 5. BỘ MÁY LÃNH ĐẠO ── */}
-      <section className="py-28 bg-[#FAF7F2]">
+      <section className="py-16 sm:py-20 bg-[#FAF7F2]">
         <div className="max-w-[1380px] mx-auto px-6 lg:px-12">
-          <div className="mb-16">
+          <div className="mb-8">
             <p className="eyebrow-orange flex items-center">
               BỘ MÁY LÃNH ĐẠO
             </p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#101D2D] leading-[1.25]">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#101D2D] leading-[1.25]">
               Hội đồng quản trị <span className="ampersand text-2xl sm:text-3xl lg:text-4xl">&</span> Ban giám đốc
             </h2>
           </div>
 
-          <div className="mb-16">
-            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6">
-              Hội đồng quản trị
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              {hdqt.map(m => (
-                <div key={m.name} className="bg-white p-8 flex flex-col justify-between shadow-sm">
-                  <div>
-                    <div className="w-12 h-12 rounded-full bg-[#0D5A3A] text-white flex items-center justify-center font-bold text-sm mb-6">
+          <div className="grid lg:grid-cols-5 gap-6 items-start">
+            <div className="lg:col-span-2 bg-white p-5 sm:p-6 shadow-sm">
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
+                Hội đồng quản trị
+              </h3>
+              <div className="space-y-3">
+                {hdqt.map(m => (
+                  <div key={m.name} className="flex items-center gap-3 border-b border-gray-100 pb-3 last:border-0 last:pb-0">
+                    <div className="w-10 h-10 shrink-0 rounded-full bg-[#0D5A3A] text-white flex items-center justify-center font-bold text-xs">
                       {m.tag}
                     </div>
-                    <div className="text-[10px] text-[#E07026] font-bold uppercase tracking-wider mb-1.5">
-                      {m.role}
+                    <div className="min-w-0">
+                      <div className="text-[10px] text-[#E07026] font-bold uppercase tracking-wider mb-0.5">
+                        {m.role}
+                      </div>
+                      <h4 className="text-base font-bold text-[#101D2D] leading-snug">
+                        {m.name}
+                      </h4>
                     </div>
-                    <h4 className="text-xl font-bold text-[#101D2D] mb-1">
-                      {m.name}
-                    </h4>
                   </div>
-                  <p className="text-gray-400 text-xs mt-4">
-                    <AmpersandText>{m.sub}</AmpersandText>
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-6">
-              Ban giám đốc
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {bgd.map(m => (
-                <div key={m.name} className="bg-white p-8 flex flex-col justify-between shadow-sm min-h-[230px]">
-                  <div>
-                    <div className="w-12 h-12 rounded-full bg-[#0D5A3A] text-white flex items-center justify-center font-bold text-sm mb-6">
+            <div className="lg:col-span-3 bg-white p-5 sm:p-6 shadow-sm">
+              <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4">
+                Ban giám đốc
+              </h3>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {bgd.map(m => (
+                  <div key={m.name} className="flex gap-3 border border-gray-100 p-3">
+                    <div className="w-9 h-9 shrink-0 rounded-full bg-[#0D5A3A] text-white flex items-center justify-center font-bold text-xs">
                       {m.tag}
                     </div>
-                    <div className="text-[10px] text-[#E07026] font-bold uppercase tracking-wider mb-1.5">
-                      {m.role}
+                    <div className="min-w-0">
+                      <div className="text-[10px] text-[#E07026] font-bold uppercase tracking-wider mb-0.5">
+                        {m.role}
+                      </div>
+                      <h4 className="text-base font-bold text-[#101D2D] leading-snug mb-1">
+                        {m.name}
+                      </h4>
+                      <p className="text-gray-500 text-[11px] leading-relaxed">
+                        {m.sub}
+                      </p>
                     </div>
-                    <h4 className="text-lg font-bold text-[#101D2D] mb-2">
-                      {m.name}
-                    </h4>
                   </div>
-                  <p className="text-gray-500 text-xs leading-relaxed mt-2">
-                    {m.sub}
-                  </p>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

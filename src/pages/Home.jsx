@@ -34,35 +34,35 @@ const services = [
     num: '01',
     title: 'Tư vấn khảo sát – thiết kế; giám sát & QLDA',
     desc: 'Khảo sát địa chất, địa hình; tư vấn thiết kế, giám sát và quản lý dự án đảm bảo chất lượng – tiến độ – hiệu quả.',
-    img: '/images/projects/hinh1_khao_sat_dia_hinh_dong_tien.jpg',
+    img: '/images/photoDAVICO/img_p11_2.webp',
     to: '/linh-vuc',
   },
   {
     num: '02',
     title: 'Thi công xây dựng nền móng',
     desc: 'Cọc khoan nhồi mini, cọc ống bê tông, cọc ép bê tông cốt thép cho công trình có điều kiện địa chất, địa hình phức tạp.',
-    img: '/images/projects/hinh7_thi_cong_nha_anh_quyet(1).png',
+    img: '/images/photoDAVICO/hinh7_thi_cong_nha_anh_quyet_1_.webp',
     to: '/linh-vuc',
   },
   {
     num: '03',
     title: 'Dịch vụ kỹ thuật khảo sát, điện nước',
     desc: 'Mua bán, sửa chữa thiết bị khảo sát; điện năng lượng mặt trời, máy lọc không khí, lọc nước.',
-    img: '/images/projects/img_p14_4.jpeg',
+    img: '/images/photoDAVICO/img_p14_4.webp',
     to: '/linh-vuc',
   },
   {
     num: '04',
     title: 'Trồng trọt kinh doanh nông sản',
     desc: 'Bưởi Diễn Tràng Xá và Trà Tân Cương – DAVICO, trồng và chăm sóc theo quy trình VietGAP.',
-    img: '/images/projects/img_p16_2.jpeg',
+    img: '/images/photoDAVICO/img_p16_2.webp',
     to: '/nong-san',
   },
   {
     num: '05',
     title: 'Tư vấn mua bán bất động sản, đầu tư dự án',
     desc: 'Môi giới bất động sản có chứng chỉ hành nghề; nghiên cứu đầu tư dự án nhà ở, nghỉ dưỡng.',
-    img: '/images/projects/cover_page.jpg',
+    img: '/images/photoDAVICO/khao_sat_11zon.webp',
     to: '/linh-vuc',
   },
 ]
@@ -93,7 +93,7 @@ export default function Home() {
         {/* Background ảnh minh họa */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/bgr.png"
+            src="/images/photoDAVICO/bgr.webp"
             alt="DAVICO Hero Background"
             className="w-full h-full object-cover object-top"
           />
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="lg:col-span-6 relative mt-4 lg:mt-0">
               <div className="relative h-[430px] bg-[#143B33] overflow-hidden">
                 <img
-                  src="/images/projects/doi_ngu.png"
+                  src="/images/photoDAVICO/doi_ngu.webp"
                   alt="Đội ngũ DAVICO"
                   className="w-full h-full object-cover object-center"
                 />
@@ -323,7 +323,7 @@ export default function Home() {
             {/* Cột trái */}
             <div className="lg:col-span-7 relative bg-[#132230] h-[540px] overflow-hidden flex flex-col justify-end p-8 sm:p-10 text-white group">
               <img
-                src="/images/projects/hinh1_khao_sat_dia_hinh_dong_tien.jpg"
+                src="/images/photoDAVICO/img_p11_2.webp"
                 alt="Khảo sát địa hình Đồng Tiến"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
@@ -347,7 +347,7 @@ export default function Home() {
             <div className="lg:col-span-5 flex flex-col gap-8 lg:gap-10">
               <div className="relative bg-[#132230] h-[250px] overflow-hidden flex flex-col justify-end p-6 sm:p-8 text-white group">
                 <img
-                  src="/images/projects/img_p12_2.jpeg"
+                  src="/images/photoDAVICO/img_p12_2.webp"
                   alt="Khảo sát địa chất Thanh Bình"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -369,7 +369,7 @@ export default function Home() {
 
               <div className="relative bg-[#132230] h-[250px] overflow-hidden flex flex-col justify-end p-6 sm:p-8 text-white group">
                 <img
-                  src="/images/projects/hinh6_thi_cong_nha_anh_hai(1).png"
+                  src="/images/photoDAVICO/hinh6_thi_cong_nha_anh_hai_1_.webp"
                   alt="Thi công nền móng nhà anh Hải"
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -420,14 +420,14 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-5 sm:gap-6">
                 <div className="h-72 sm:h-80 bg-[#124B36] overflow-hidden">
                   <img
-                    src="/images/projects/page_render_16(1).png"
+                    src="/images/photoDAVICO/khoai_1.webp"
                     alt="Bưởi Diễn Tràng Xá"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="h-72 sm:h-80 bg-[#124B36] overflow-hidden relative">
                   <img
-                    src="/images/projects/page_render_17(1).png"
+                    src="/images/photoDAVICO/anh_doi_che.webp"
                     alt="Trà Tân Cương"
                     className="w-full h-full object-cover"
                   />
