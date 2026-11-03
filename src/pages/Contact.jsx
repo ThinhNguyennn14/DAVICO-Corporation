@@ -25,6 +25,7 @@ const companyInfo = [
   {
     label: 'FANPAGE',
     value: 'Công ty cổ phần tư vấn và đầu tư phát triển bền vững Đất Việt',
+    href: 'https://www.facebook.com/p/C%C3%B4ng-ty-c%E1%BB%95-ph%E1%BA%A7n-t%C6%B0-v%E1%BA%A5n-v%C3%A0-%C4%91%E1%BA%A7u-t%C6%B0-ph%C3%A1t-tri%E1%BB%83n-b%E1%BB%81n-v%E1%BB%AFng-%C4%90%E1%BA%A5t-Vi%E1%BB%87t-Davico-61568190615347/',
   },
   {
     label: 'MÃ SỐ DOANH NGHIỆP',
@@ -126,12 +127,35 @@ export default function Contact() {
                         ))}
                       </div>
                     ) : info.href ? (
-                      <a
-                        href={info.href}
-                        className="text-xs sm:text-sm text-[#101D2D] font-medium hover:text-[#E07026] transition-colors"
-                      >
-                        {info.value}
-                      </a>
+                      info.label === 'FANPAGE' ? (
+                        <a
+                          href={info.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          aria-label={`Xem fanpage Facebook: ${info.value}`}
+                          className="inline-flex items-center gap-2 text-xs sm:text-sm text-[#101D2D] font-medium hover:text-[#E07026] transition-colors"
+                        >
+                          {info.value}
+                          <svg
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            className="h-7 w-7 shrink-0"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="#1877F2" />
+                            <path
+                              fill="#fff"
+                              d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.6 1.6-1.6h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5v2.1H7v3.2h2.8V21h3.7Z"
+                            />
+                          </svg>
+                        </a>
+                      ) : (
+                        <a
+                          href={info.href}
+                          className="text-xs sm:text-sm text-[#101D2D] font-medium hover:text-[#E07026] transition-colors"
+                        >
+                          {info.value}
+                        </a>
+                      )
                     ) : (
                       <p className="text-xs sm:text-sm text-[#101D2D] font-medium">
                         {info.value}
